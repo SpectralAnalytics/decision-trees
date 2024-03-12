@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import streamlit as st
-from sklearn.datasets import load_iris
 
 st.set_page_config(layout="wide")
 
