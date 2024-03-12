@@ -22,7 +22,7 @@ st.write("""
 Imagine that you can only use one feature at any one time to compare and classify data. Which feature would you pick first and what value would you pick to perform the split?
 """)
 
-st.write("""Hint: You can pick "petal length (cm)" as the first feature with a threshold of 2.45""")
+st.write("""Hint: You can pick "petal_length" as the first feature with a threshold of 2.45""")
 
 col1, col2 = st.columns(2)
 
@@ -53,7 +53,7 @@ else:
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        st.header("Histogram by Species")
+        st.header("KDE Plot by Species")
         plt.figure() # clear the previous 
         sns.kdeplot(data=df, x=feature1, hue="species")
         plt.axvline(x=value1, color="red", label="Threshold")
